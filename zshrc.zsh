@@ -22,6 +22,9 @@ for module in "${TOMAGH_MODULES[@]}"; do
     fi
 done
 
+# Load tools
+source "${0:A:h}/tools/zshrc.zsh"
+
 # aliases
 alias rz="exec zsh" # restart zsh
 alias ls="eza --no-quotes --icons --group-directories-first --git-repos-no-status --smart-group"
