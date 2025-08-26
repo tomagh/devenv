@@ -1,5 +1,5 @@
 
-__print_styles_and_colors() {
+_tgh_print_styles_and_colors() {
   local -A styles=(
     [0]="Reset"
     [1]="Bold"
@@ -49,7 +49,7 @@ __print_styles_and_colors() {
 }
 
 
-function __text() {
+function __tgh_text() {
     local style=$1
     shift
     case $style in
